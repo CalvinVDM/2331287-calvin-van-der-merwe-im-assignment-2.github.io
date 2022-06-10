@@ -1,0 +1,181 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: url(/Images/WebsiteBackGround.jpg) no-repeat;
+  background-size: cover;
+  height: 1250vh;
+}
+
+nav {
+  background: rgba(255, 0, 0, 0.959);
+  backdrop-filter: blur(3px);
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+  color: rgb(206, 22, 22);
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 89px;
+  background-color: white;
+  margin: 0 55px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 128, 0);
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+
+#logo {
+  width: 100px;
+  margin: 0 0 -16px -319px;
+}
+
+.burger-button {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .burger-button {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 100vh;
+    text-align: center;
+    top: 60px;
+    left: -800px;
+    transition: all 1s;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 3opx 0;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+h1 {
+  color: rgb(226, 60, 0);
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 100px;
+  background-color: black;
+  margin: 0 200px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: rgb(204, 18, 18);
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  background-color: rgb(255, 255, 255);
+  margin: 0 100px;
+  line-height: 80px;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  background-color: rgba(49, 49, 49, 0.63);
+}
+
+#HomeImg {
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Drawings {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Wireframe {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin: 0 auto;
+  height: 50vh;
+  width: 50%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 50%;
+}
+
+.container h4, h5 {
+  color: orangered;
+}
+
+.container button {
+  background: rgb(255, 255, 255);
+  color: coral;
+  border-radius: 5px;
+  border: 1px;
+  padding: 10px 20px;
+  transition: ease-in-out 0.5s;
+}
+
+.container button:hover{
+  background: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
